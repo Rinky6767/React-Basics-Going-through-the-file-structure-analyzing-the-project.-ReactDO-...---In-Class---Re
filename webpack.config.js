@@ -37,4 +37,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx'],
     }
+    options: {
+        presets: ['@babel/preset-env', '@babel/preset-react']
+    }
 };
