@@ -1,10 +1,3 @@
-module.exports = {
-  presets: [
-    [
-      "@babel/preset-react",
-      {
-        development: process.env.BABEL_ENV === "development",
-      },
-    ],
-  ],
-};
+require("@babel/core").transformSync("code", {
+  presets: ["@babel/preset-react"],
+});
